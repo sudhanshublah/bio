@@ -1,120 +1,132 @@
 # Site
-repository: sproogen/resume-theme
+repository: sudhanshublah/resume
 favicon: images/favicon.ico
 
 # Content configuration version
 version: 2
 
 # Personal info
-name: Brett Harris
-title: Senior Network System Administrator
-email: brett.h@email.co.uk
-website: www.github.com/sproogen/resume-theme
+name: Sudhanshu Kumar
+title: DevOps | MLOps Engineer
+email: sudhanshuk1219@gmail.com
+website: www.github.com/sudhanshublah
 
 # Dark Mode (true/false/never)
 darkmode: false
 
 # Social links
-twitter_username: facespics
-github_username:  sproogen
-# stackoverflow_username: "00000001"
-# dribbble_username: jekyll
-# facebook_username: jekyll
-# flickr_username: jekyll
-instagram_username: jameswgrant
-linkedin_username: jameswgrant
-# xing_username: jekyll
-# pinterest_username: jekyll
-youtube_username: globalmtb
-# googleplus_username: +jekyll
-# orcid_username: 0000-0000-0000-0000
-
-# Additional icon links
-additional_links:
-- title: itsgoingto.be
-  icon: fas fa-globe
-  url: https://www.itsgoingto.be
-# - title: another link
-#   icon: font awesome brand icon name (eg. fab fa-twitter) (https://fontawesome.com/icons?d=gallery&m=free)
-#   url: Link url (eg. https://google.com)
-
-# Google Analytics and Tag Manager
-# Using more than one of these may cause issues with reporting
-# gtm: "GTM-0000000"
-# gtag: "UA-00000000-0"
-# google_analytics: "UA-00000000-0"
+github_username: sudhanshublah
+linkedin_username: sudhanshu-kumar-673034181
 
 # About Section
-# about_title: About Me
-about_profile_image: images/profile.jpg
-about_content: | # this will include new lines to allow paragraphs
-  Hi, my name's Brett and I'm a senior network system administrator. As well as administrating systems I also have experience making software and web apps. I have worked at a number of companies gaining teamwork and leadership skills.
+about_profile_image: images/profile.JPG
+about_content: | 
+  Hi, I'm Sudhanshu Kumar, a DevOps and MLOps Engineer with experience in designing, deploying, and optimizing cloud-native and AI-driven solutions. I specialize in cloud platforms like AWS and GCP, as well as tools and technologies such as Kubernetes, Terraform, and FastAPI. My passion lies in integrating DevOps best practices with cutting-edge Generative AI models to enable scalable, high-performance systems.
 
-  I am most skilled in: <mark>AWS</mark> and <mark>Eating Pizza</mark>
+  I am skilled in:  
+  - **DevOps Tools**: Docker, Kubernetes, Terraform, CI/CD pipelines (Jenkins, GitHub Actions)  
+  - **Cloud Platforms**: AWS, GCP, and Vertex AI  
+  - **MLOps**: Torchserve, Triton Inference Server, Ray Serve, TensorRT  
+  - **Compliance**: SOC 2  
+  - **Backup Solutions**: Veeam, BackupCARoleService  
+
+  I thrive on solving complex technical problems and continuously learning to stay ahead in this fast-paced industry.
 
 content:
-  - title: Projects # Title for the section
-    layout: list # Type of content section (list/text)
+  - title: Projects
+    layout: list
     content:
       - layout: top-middle
-        title: Super awesome project
-        link: github.com/sproogen
-        # link_text: Project Website
+        title: Generative AI Deployment on Vertex AI
+        link: https://github.com/sudhanshublah/vertex-ai-deployment
         additional_links:
-          - title:  sproogen/modern-resume-theme
+          - title: GitHub Repository
             icon: fab fa-github
-            url: github.com/sproogen/modern-resume-theme
-          # - title:  Github page for project (eg. sproogen/modern-resume-theme)
-          #   icon: fab fa-github
-          #   url: Link to project (eg. sproogen.github.io/modern-resume-theme)
+            url: https://github.com/sudhanshublah/vertex-ai-deployment
         quote: >
-          This is probably one of the greatest apps ever created, if you don't agree you're probably wrong.
-        description: | # this will include new lines to allow paragraphs
-          I started this project as a way if learning <mark>React</mark> and it has since grown into a fully fledged app. I have learned many skills through this and been I'm very proud of having this in my portfolio. If you don't have a project as awesome as this I would advise you make one.
+          Enabled scalable and cost-efficient Generative AI solutions on Vertex AI with seamless API integrations.
+        description: | 
+          Built an infrastructure to deploy and scale Generative AI models using GCP Vertex AI. Optimized GPU utilization and integrated Triton Inference Server with TensorRT to enhance model performance. Managed API endpoints using FastAPI and implemented autoscaling using Kubernetes.  
 
-  - title: Experience # Title for the section
-    layout: list # Type of content section (list/text)
+      - layout: top-middle
+        title: Security Group Management in AWS
+        link: https://github.com/sudhanshublah/aws-sg-management
+        additional_links:
+          - title: GitHub Repository
+            icon: fab fa-github
+            url: https://github.com/sudhanshublah/aws-sg-management
+        quote: >
+          Automated the identification and backup of unused AWS security groups across multiple accounts.
+        description: | 
+          Designed a Python script to list and back up unused security groups in AWS. Integrated the solution with S3 for configuration backups, ensuring easy recovery without immediate deletion. Reduced manual intervention and improved cloud resource hygiene.  
+
+      - layout: top-middle
+        title: Stable Diffusion Model Deployment
+        link: https://github.com/sudhanshublah/stable-diffusion-deployment
+        additional_links:
+          - title: GitHub Repository
+            icon: fab fa-github
+            url: https://github.com/sudhanshublah/stable-diffusion-deployment
+        quote: >
+          Empowered creative teams with an efficient deployment of Stable Diffusion models on Kubernetes clusters.
+        description: | 
+          Deployed a scalable Stable Diffusion model on GKE and standalone VMs. Configured API Gateways and ensured seamless scaling with Ray Serve. Integrated ML pipelines for model updates and optimized resource usage for high availability.  
+
+  - title: Experience
+    layout: list
     content:
       - layout: left
-        title: The Boring Company
-        link: boringcompany.com
-        # link_text: boringcompany.com
-        sub_title: Senior Network System Administrator
-        caption: November 2017 - Present
+        title: DevOps Engineer
+        link: https://imagine.io
+        sub_title: Imagine.io, New Delhi
+        caption: August 2023 - Present
         quote: >
-          Solving 21st century problems by diging holes and making game changing products like the *not a flamethrower*
-        description: | # this will include new lines to allow paragraphs
-            Every company needs its networks properly administered and The Boring Compay is no exception. Digging holes is hard and I play my part making sure the whole company stays connected. I lead a team of 5 people and enjoy driving the company to try new technologies.
+          Building scalable and efficient infrastructure for Generative AI and cloud-native applications.
+        description: | 
+          - Deployed Generative AI models using Kubernetes, Vertex AI, and Triton Inference Server.  
+          - Designed SOC 2 compliance strategies for security and reliability.  
+          - Worked on API Gateway configurations and backup strategies for critical resources.  
+          - Collaborated with cross-functional teams to utilize GCP credits efficiently.  
 
-  - title: Education # Title for the section
-    layout: list # Type of content section (list/text)
+      - layout: left
+        title: Cloud Engineer
+        link: https://examplecompany.com
+        sub_title: Example Company, Bangalore
+        caption: May 2020 - August 2023
+        quote: >
+          Engineered cloud-based solutions and optimized CI/CD pipelines for seamless deployment.
+        description: | 
+          - Built Terraform scripts for infrastructure automation.  
+          - Migrated on-prem applications to AWS and implemented disaster recovery strategies using Veeam.  
+          - Improved container orchestration with Kubernetes and Helm.  
+          - Automated compliance and audit processes to meet regulatory standards.  
+
+  - title: Education
+    layout: list
     content:
       - layout: left
-        title: Harvard University
-        caption: 2010 - 2013
-        sub_title: BSc Computer Science
+        title: Delhi Technological University
+        caption: 2015 - 2019
+        sub_title: B.Tech Computer Engineering
         quote: >
-          Established in 1636, Harvard is the oldest higher education institution in the United States, and is widely regarded in terms of its influence, reputation, and academic pedigree as a leading university in not just the US but also the world.
-        description: | # this will include new lines to allow paragraphs
-          During my time at Harvard I learnt most of my key skills that have I have taken through my career such as teamwork and working to tight deadlines. I thouroughly enjoyed my time as university and learnt a lot about a healthy work life balance.
-
-          I spent a lot of my free time as a committee member of the *Harvard Mountaineering Club* taking on roles such as *Trip Secretary* and *Vice-President*.
+          Acquired a strong foundation in software engineering and cloud technologies.
+        description: | 
+          Gained expertise in algorithms, data structures, and distributed systems. Participated in hackathons and led a team to build an award-winning project integrating IoT with AI for smart home systems.  
 
   - title: A Little More About Me
     layout: text
-    content: | # this will include new lines to allow paragraphs
-      Alongside my interests in networks and software engineering some of my other interests and hobbies are:
-      - Rock climbing
-      - Gaming
-      - Knitting
-      - [Becoming a ninja](https://www.youtube.com/watch?v=vtg4o__aRMg)
+    content: | 
+      Outside of work, I enjoy exploring new technologies and experimenting with Generative AI. My hobbies and interests include:  
+      - Chess  
+      - Photography  
+      - Traveling to explore new cultures  
+      - Rock climbing and fitness  
 
-      Look at this cool image  
-      ![Trees](/modern-resume-theme/images/landscape-trees.jpg "Trees")
+      I also find joy in mentoring young professionals and contributing to open-source projects.
 
 # Footer
 footer_show_references: true
-# references_title: References on request (Override references text)
+# references_title: References available upon request.
 
 # Build settings
 remote_theme: sproogen/resume-theme
