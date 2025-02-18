@@ -87,12 +87,22 @@ content:
           - Designed SOC 2 compliance strategies for security and reliability.  
           - Worked on API Gateway configurations and backup strategies for critical resources.  
           - Collaborated with cross-functional teams to utilize GCP credits efficiently.  
-
+      - layout: left
+        title: DevOps Engineer
+        link: https://zenarate.com
+        sub_title: Zenarate, Gurgaon
+        caption: September 2022 - August 2023
+        quote: >
+          Building scalable and efficient infrastructure for Generative AI and cloud-native applications.
+        description: | 
+          - Designed SOC 2 compliance strategies for security and reliability.  
+          - Worked on API Gateway configurations and backup strategies for critical resources.  
+          - Collaborated with cross-functional teams to utilize GCP credits efficiently.  
       - layout: left
         title: Cloud Engineer
-        link: https://examplecompany.com
-        sub_title: Example Company, Bangalore
-        caption: May 2020 - August 2023
+        link: https://tothenew.com
+        sub_title: To The New, Noida
+        caption: September 2021 - September 2022
         quote: >
           Engineered cloud-based solutions and optimized CI/CD pipelines for seamless deployment.
         description: | 
@@ -105,11 +115,11 @@ content:
     layout: list
     content:
       - layout: left
-        title: Delhi Technological University
-        caption: 2015 - 2019
+        title: IILM College of Engineering and Technology
+        caption: 2016 - 2020
         sub_title: B.Tech Computer Engineering
         quote: >
-          Acquired a strong foundation in software engineering and cloud technologies.
+          Acquired a strong foundation in software engineering.
         description: | 
           Gained expertise in algorithms, data structures, and distributed systems. Participated in hackathons and led a team to build an award-winning project integrating IoT with AI for smart home systems.  
 
