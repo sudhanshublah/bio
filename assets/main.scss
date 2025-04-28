@@ -1,5 +1,114 @@
----
-# Front matter comment to ensure Jekyll properly reads file.
----
+@keyframes fadeIn {
+  from { 
+    opacity: 0; 
+    transform: translateY(20px); 
+  }
+  to { 
+    opacity: 1; 
+    transform: translateY(0); 
+  }
+}
 
-@import 'modern-resume-theme';
+@keyframes slideIn {
+  from { 
+    transform: translateX(-100%); 
+    opacity: 0; 
+  }
+  to { 
+    transform: translateX(0); 
+    opacity: 1; 
+  }
+}
+
+@keyframes pulse {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.05); }
+  100% { transform: scale(1); }
+}
+
+// Add smooth transitions for all elements
+* {
+  transition: all 0.3s ease-in-out;
+}
+
+// Profile section animation
+.profile {
+  animation: fadeIn 1s ease-out forwards;
+  opacity: 0;  // Set initial opacity
+}
+
+// Project cards animation
+.projects .item {
+  animation: slideIn 0.8s ease-out forwards;
+  opacity: 0;  // Set initial opacity
+  &:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+  }
+}
+
+// Skills section animation
+.about-content ul li {
+  opacity: 0;  // Set initial opacity
+  animation: slideIn 0.6s ease-out forwards;
+  animation-fill-mode: both;
+  &:nth-child(1) { animation-delay: 0.1s; }
+  &:nth-child(2) { animation-delay: 0.2s; }
+  &:nth-child(3) { animation-delay: 0.3s; }
+  &:nth-child(4) { animation-delay: 0.4s; }
+}
+
+// Experience timeline animation
+.experience .item {
+  opacity: 0;  // Set initial opacity
+  animation: fadeIn 0.8s ease-out forwards;
+  animation-fill-mode: both;
+  &:hover {
+    animation: pulse 1s infinite;
+  }
+}
+
+// Social links animation
+.social-links a {
+  display: inline-block;  // Added for better transform behavior
+  transition: transform 0.3s ease;
+  &:hover {
+    transform: scale(1.2);
+  }
+}
+
+// Dark mode transition
+body {
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+// Header animation
+.header {
+  opacity: 0;  // Set initial opacity
+  animation: fadeIn 1s ease-out forwards;
+  &:hover {
+    transform: translateY(-2px);
+  }
+}
+
+// Quote text animation
+.quote {
+  position: relative;
+  overflow: hidden;
+  &::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: currentColor;
+    transform: scaleX(0);
+    transform-origin: left;  // Added for better animation
+    transition: transform 0.3s ease;
+  }
+  &:hover::after {
+    transform: scaleX(1);
+  }
+}
+  
