@@ -7,3 +7,5 @@
 #
 layout: default
 ---
+
+<script src="{{ site.baseurl }}/assets/js/animations.js"></script>
